@@ -19,7 +19,7 @@ const SearchContainer = ({ navigation }) => {
   const fetchResults = () => {
     setIsLoading(true);
     if (searchQuery === "" || searchType === "") {
-      alert("Please enter search term or search type");
+      alert("Please enter search term and search type");
     } else {
       getSearchList(searchQuery, searchType).then(
         (res) => {
